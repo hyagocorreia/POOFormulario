@@ -1,4 +1,4 @@
-package tests;
+package formulario;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
