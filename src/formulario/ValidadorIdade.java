@@ -1,6 +1,6 @@
 package formulario;
 
-public class ValidadorIdade implements Validador {
+public class ValidadorIdade implements ValidadorCampo {
 	int tamMax;
 	public ValidadorIdade(int tamMax){
 		this.tamMax = tamMax;

@@ -2,9 +2,9 @@ package formulario;
 
 public class Campo {
 	private String id, valor, label;
-	private Validador validador;
+	private ValidadorCampo validador;
 	
-	public Campo(String id, String label, Validador validador){
+	public Campo(String id, String label, ValidadorCampo validador){
 		this.id = id;
 		this.label = label;
 		this.validador = validador;

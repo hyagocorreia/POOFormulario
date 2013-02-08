@@ -1,17 +1,15 @@
 package formulario;
 
-public class ValidadorTexto implements Validador {
-	private int tamMax;
-	
-	public ValidadorTexto(int tamMax){
-		this.tamMax = tamMax;
-	}
+public class ValidadorTexto implements ValidadorCampo {
 	
 	public boolean validar(String valor) {
-		if(valor == null || valor.length() == 0 || valor.length() > tamMax){
+		if(valor == null) return true;
+		try{
+			Integer.parseInt(valor);
 			return false;
+		}catch(Exception e){
+			return true;
 		}
-		return true;
 	}
 
 }

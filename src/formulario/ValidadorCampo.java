@@ -1,5 +1,5 @@
 package formulario;
 
-public interface Validador {
+public interface ValidadorCampo {
 	public boolean validar(String valor);
 }
